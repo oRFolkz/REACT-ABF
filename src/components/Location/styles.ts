@@ -1,82 +1,193 @@
 import styled from 'styled-components'
 import { colors } from '../../styles.ts'
 
-export const Skillcards = styled.div`
-    background: linear-gradient(0deg, rgba(202, 168, 88, 0.7) -100%, rgba(35, 31, 32, 1) -100%, rgba(35, 31, 32, 1) 95%, rgba(187, 156, 83, 0.7) 100%);
+export const Footer = styled.div`
+    background-color: ${colors.grey};
+    padding-bottom: 1.1rem;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: auto;
-`
 
-export const CardsContainer = styled.div`
-    margin: 2rem auto;
-    justify-content: center;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    max-width: 1400px;
-
-    @media ( width < 680px ) {
-        order: 1;
-    }
-`
-
-export const CardSubcontainer = styled.div`
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-`
-
-export const Cards = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 38rem;
-    height: 15rem;
-
-    border-radius: 1rem;
-    background-color: white;
-    box-shadow: 1px 1px 10px var(--color-gold);
-    
-    .CardImgClass {
-        width: 500px;
-        height: 500px;
-    }
-
-    @media ( width < 680px ) {
+    @media ( width < 860px ){
         flex-direction: column;
-        gap: 0;
-        width: 90% !important;
-        height: auto !important;
-        padding: 1rem 0;
-        text-align: center;
+    }
+`
+export const FooterContainer = styled.div`
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
+    i {
+        padding-right: 0.3rem;
+    }
+
+    @media ( width < 960px ) {
+        width: 95%;
+        padding: 1rem 0 0 0;
+    }
+
+    @media ( width < 860px ) {
+        padding: 0;
+    }
+`
+
+export const LogoSide = styled.div`
+    color: ${colors.gold};
+    text-align: center;
+    width: 250px;
+    height: 130px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media ( width < 960px ) {
+        width: 200px;
+    }
+
+    @media ( width < 860px ) {
+        width: 200px;
+        height: 120px;
+        margin: 0;
+        padding-bottom: 2rem;
 
         img {
-            margin-top: 1rem;
+            width: 120%;
+            height: 110%;
         }
     }
 `
 
-export const CardSubcontainerTitle = styled.h4`
-    color: ${colors.gold};
-    font-weight: 600;
-    font-size: 1.2rem;
-    padding-left: 2rem;
-    padding-top: 1.5rem;
-    margin: 0;
-    height: 20px;
+export const InfoSide = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    color: white;
+    font-weight: 500;
+
+    @media ( width < 860px ) {
+        width: auto;
+        height: 150px;
+    }
 `
 
-export const CardSubcontainerDescription = styled.p`
-    color: black;
-    font-weight: 400;
-    font-size: 1rem;
-    padding-left: 2rem;
-    padding-top: 1rem;
-    margin: 0;
-    width: 85%;
-    height: 200px;
+export const TimeSide = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    color: white;
+    font-weight: 500;
+
+    @media ( width < 860px ) {
+        width: auto;
+        height: 150px;
+    }
+`
+
+export const ContactBook = styled.div`
+    font-size: 2rem;
+`
+export const FooterClock = styled.div`
+    font-size: 2rem;
+`
+
+export const FooterInfo = styled.div`
+    border-left: 1px solid ${colors.gold};
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    margin-left: 1rem;
+
+    p {
+        margin: 0;
+    }
+`
+
+export const FooterTime = styled.div`
+    border-left: 1px solid ${colors.gold};
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    margin-left: 1rem;
+
+    p {
+        margin: 0;
+    }
+`
+
+export const footerInfo = styled.div`
+    color: white !important;
+
+    .fa-whatsapp {
+        color: white !important;
+    }
+
+    p {
+        margin: 0;
+    }
+`
+
+export const LocationSide = styled.div`
+    margin: auto;
+    width: 850px;
+    height: 320px;
+    text-align: end;
+
+    @media ( width < 960px ) {
+        width: 85%;
+    }
+
+    @media ( width < 860px ) {
+        width: 70%;
+    }
+`
+
+export const Diretos = styled.div`
+    color: ${colors.gold};
+    background-color: ${colors.grey};
+    border-top: 2px solid ${colors.gold};
+    padding: 0rem 0;
+    text-align: center;
+
+    h6 {
+        margin: auto;
+    }
+`
+
+export const FooterSubContainer = styled.div`
+    background-color: ${colors.grey};
+    display: flex;
+    justify-content: space-around;
+    width: 820px;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    @media ( width < 860px ) {
+        width: 100%;
+        height: 200px;
+    }
+
+    @media ( width < 860px ) {
+        flex-direction: column;
+        width: 100%;
+        max-width: 610px;
+        height: auto;
+        padding: 0 0 2rem 0;
+    }
+
+    @media ( width < 680px ) {
+        max-width: 500px;
+        width: 75%;
+    }
+`
+
+export const Teste = styled.div`
+    display: flex;
+    gap: 3rem;
+
+    @media ( width < 680px ) {
+        flex-direction: column;
+        gap: 0rem;
+    }
 `

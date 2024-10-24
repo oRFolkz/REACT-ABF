@@ -28,6 +28,11 @@ export const CardSubcontainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media ( width < 680px ) {
+        align-items: center;
+        text-align: center;
+    }
 `
 
 export const Cards = styled.div`
@@ -49,14 +54,18 @@ export const Cards = styled.div`
     @media ( width < 680px ) {
         flex-direction: column;
         gap: 0;
-        width: 90% !important;
-        height: auto !important;
+        width: 70% !important;
+        height: 25rem !important;
         padding: 1rem 0;
-        text-align: center;
+    }
 
-        img {
-            margin-top: 1rem;
-        }
+    
+    @media ( width < 390px ) {
+        width: 60% !important;
+    }
+
+    @media ( width < 330px ) {
+        width: 50% !important;
     }
 `
 
@@ -68,6 +77,16 @@ export const CardSubcontainerTitle = styled.h4`
     padding-top: 1.5rem;
     margin: 0;
     height: 20px;
+
+    @media ( width < 680px ) {
+        padding-left: 0rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    @media ( width < 390px ) {
+        padding-bottom: 2rem;
+    }
 `
 
 export const CardSubcontainerDescription = styled.p`
@@ -79,4 +98,10 @@ export const CardSubcontainerDescription = styled.p`
     margin: 0;
     width: 85%;
     height: 200px;
+
+    @media ( width < 680px ) {
+        height: auto;
+        padding-left: 0rem;
+        padding-top: 0rem;
+    }
 `

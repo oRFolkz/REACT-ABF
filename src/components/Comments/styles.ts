@@ -5,6 +5,10 @@ export const CommentsContainer = styled.div`
     width: 100%;
     background: linear-gradient(0deg, rgba(202,168,88,0.5) 0%, rgba(255,255,255,0) 100%);
     padding: 3rem 0;
+
+    @media ( width < 580px ) {
+        padding: 1.5rem 0;
+    }
 `
 export const CommentsSubContainer = styled.div`
     max-width: 1050px;
@@ -12,10 +16,30 @@ export const CommentsSubContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media ( width < 1100px ) {
+        justify-content: center;
+    }
+
+    @media ( width < 580px ) {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+    }
 `
 
 export const CommentsFiveStars = styled.div`
     width: 50%;
+
+    @media ( width < 1100px ) {
+        width: 30%;
+        padding: 1rem;
+    }
+
+    @media ( width < 580px ) {
+        width: 80%;
+    }
 `
 
 export const StarsText = styled.div`
@@ -24,18 +48,48 @@ export const StarsText = styled.div`
     margin: auto;
     font-weight: bold;
     color: ${colors.grey};
+
+    @media ( width < 850px ) {
+        font-size: 1.6rem;
+        line-height: 1.7rem;
+    }
+
+    @media ( width < 650px ) {
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+    }
+    
+    @media ( width < 580px ) {
+        font-size: 1.6rem;
+    }
 `
 
 export const StarsSubText = styled.div`
     font-size: 1rem;
     font-weight: bold;
     color: ${colors.grey};
+
+    @media ( width < 650px ) {
+        font-size: 14px;
+    }
+
+    @media ( width < 580px ) {
+        padding-top: 0.5rem;
+        font-size: 1rem;
+    }
 `
 
 export const StarsContainer = styled.div`
     padding-top: 1rem;
     font-size: 2.5rem;
     color: ${colors.gold};
+
+    @media ( width < 850px ) {
+        font-size: 2rem;
+    }
+    @media ( width < 650px ) {
+        font-size: 1.5rem;
+    }
 `
 export const CommentsUsers = styled.div`
     cursor: grab;
@@ -53,6 +107,17 @@ export const CommentsUsers = styled.div`
         height: 6rem;
         margin: auto;
         padding-top: 1rem;
+    }
+
+    @media ( width < 1100px ) {
+        width: 40%;
+        padding: 1rem;
+    }
+
+    @media ( width < 580px ) {
+        width: 70%;
+        margin: 0;
+        padding: 1rem;
     }
 `
 

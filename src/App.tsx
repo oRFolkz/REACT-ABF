@@ -5,6 +5,7 @@ import Banner from './components/Banner/index.tsx'
 import Partners from './components/Partners/index.tsx'
 import Coments from './components/Comments/index.tsx'
 import SkillCards from './components/SkillCards/index.tsx'
+import Location from './components/Location/index.tsx'
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Partners />
             <Coments />
             <SkillCards />
+            <Location />
         </>
     )
 }
